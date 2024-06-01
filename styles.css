@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
+:root {
+  --color-principal: rgb(0, 0, 0);
+  --background-color: rgba(184, 135, 11, 0.704);
+  --border: 1px solid red;
+  --Principal-font: "Permanent Marker";
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: var(--Principal-font);
+}
+
+h2 {
+  text-align: center;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10%;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 40px;
+}
+
+header > img {
+  height: 10%;
+  width: 10%;
+  display: flex;
+  min-width: 150px;
+}
+
+header > nav > ul {
+  display: flex;
+  gap: 70px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-principal);
+}
+
+a:hover {
+  text-transform: uppercase;
+}
+
+button {
+  background-color: var(--background-color);
+  border: 1px solid black;
+  padding: 2px;
+  border-radius: 10%;
+  font-family: var(--Principal-font);
+}
+
+button:hover {
+  background-color: darkgoldenrod;
+  color: white;
+  text-transform: uppercase;
+}
+
+/*************          Contenido Principal        *************/
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+main > section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 50%;
+  height: auto;
+  gap: 10px;
+}
+
+section {
+  max-width: 500px;
+  min-width: 300px;
+}
+
+div > p {
+  padding: 10px;
+}
+
+
+.container > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.Imagenes {
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.picture {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*************************** Footer ***************************/
+
+footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
